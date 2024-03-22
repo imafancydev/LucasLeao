@@ -9,7 +9,16 @@ type ContainerProps = {
 };
 
 const Container = ({ children }: ContainerProps) => {
-  const config: IpadCursorConfig = {};
+  const config: IpadCursorConfig = {
+    normalStyle: {
+      backdropBlur: "20px",
+    },
+    blockStyle: {
+      backdropBlur: "0px",
+      durationBackdropFilter: "0.5s",
+    },
+  };
+
   useIPadCursor();
 
   return (

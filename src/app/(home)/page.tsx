@@ -1,5 +1,10 @@
+import Container from "@/components/Container";
 import Header from "@/components/Header";
 
 export default function Home() {
-  return <Header></Header>;
+  return (
+    <Container>
+      <Header></Header>
+    </Container>
+  );
 }
