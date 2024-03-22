@@ -1,3 +1,7 @@
+"use client";
+
+import { LoopIcon } from "@radix-ui/react-icons";
+import { ModeToggle } from "./Mode-toggle";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 import Link from "next/link";
 
@@ -24,6 +28,9 @@ const Header = () => {
           </li>
           <li data-cursor="block" data-cursor-style="border-radius: 6px">
             <Link href={"/"}>Posts</Link>
+          </li>
+          <li data-cursor="block" data-cursor-style="border-radius: 6px">
+            <ModeToggle></ModeToggle>
           </li>
         </ul>
       </nav>
