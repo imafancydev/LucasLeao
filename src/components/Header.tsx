@@ -1,6 +1,5 @@
 "use client";
 
-import { LoopIcon } from "@radix-ui/react-icons";
 import { ModeToggle } from "./Mode-toggle";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 import Link from "next/link";
