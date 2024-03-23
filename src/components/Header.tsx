@@ -13,7 +13,7 @@ const Header = ({ gitHubData }: IGitHubInfoProps) => {
   return (
     <header className="flex flex-col items-center justify-between sm:flex-row">
       <div className="flex gap-2 items-center my-5">
-        <Avatar>
+        <Avatar data-cursor="block" data-cursor-style="border-radius: 20px">
           <AvatarImage src={gitHubData.avatar_url} />
           <AvatarFallback />
         </Avatar>
