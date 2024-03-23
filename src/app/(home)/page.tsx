@@ -1,10 +1,16 @@
 import Container from "@/components/Container";
 import Header from "@/components/Header";
+import { fetchGitHubData } from "@/utils/fetchGitHubData";
 
-export default function Home() {
+const getGitHubInfoData = async () => {
+  return fetchGitHubData();
+};
+
+export default async function Home() {
+  const myPersonalGitHubData = await getGitHubInfoData();
   return (
     <Container>
-      <Header></Header>
+      <Header gitHubData={myPersonalGitHubData}></Header>
     </Container>
   );
 }

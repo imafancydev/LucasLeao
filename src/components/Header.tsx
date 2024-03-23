@@ -1,15 +1,20 @@
 "use client";
 
+import { TMyPersonalGitHubData } from "@/types/GitHubData";
 import { ModeToggle } from "./Mode-toggle";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 import Link from "next/link";
 
-const Header = () => {
+interface IGitHubInfoProps {
+  gitHubData: TMyPersonalGitHubData;
+}
+
+const Header = ({ gitHubData }: IGitHubInfoProps) => {
   return (
     <header className="flex flex-col items-center justify-between sm:flex-row">
       <div className="flex gap-2 items-center my-5">
         <Avatar>
-          <AvatarImage />
+          <AvatarImage src={gitHubData.avatar_url} />
           <AvatarFallback />
         </Avatar>
       </div>
