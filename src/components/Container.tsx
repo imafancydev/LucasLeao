@@ -3,6 +3,7 @@
 import React from "react";
 import { IPadCursorProvider, useIPadCursor } from "ipad-cursor/react";
 import type { IpadCursorConfig } from "ipad-cursor";
+import Footer from "./Footer";
 
 type ContainerProps = {
   children: React.ReactNode;
@@ -24,7 +25,10 @@ const Container = ({ children }: ContainerProps) => {
 
   return (
     <main className="container mt-12 px-5 md:px-20 lg:px-56 xl:px-80 flex flex-col gap-3">
-      <IPadCursorProvider config={config}>{children}</IPadCursorProvider>
+      <IPadCursorProvider config={config}>
+        {children}
+        <Footer />
+      </IPadCursorProvider>
     </main>
   );
 };
