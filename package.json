@@ -22,7 +22,8 @@
     "react-dom": "^18",
     "shadcn-ui": "^0.8.0",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
