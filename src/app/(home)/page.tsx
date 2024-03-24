@@ -12,9 +12,9 @@ export default async function Home() {
     <Container>
       <Header gitHubData={myPersonalGitHubData}></Header>
       <main className="my-8">
-        <p>
-          Olá, meu nome é <span>Lucas Leão</span>
-        </p>
+        <h1>
+          hi, i'm <span>Lucas Leão</span>
+        </h1>
       </main>
     </Container>
   );
