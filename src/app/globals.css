@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .lucasleao {
+    position: relative;
+  }
+  .lucasleao::after {
+    padding: inherit;
+    content: "Lucas Leão";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    transition: all 0.5s;
+    z-index: 1;
+    background: -webkit-linear-gradient(0deg, #e81e57 0%, #910aff 80%, #af38ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .lucasleao:hover::after {
+    width: 100%;
+  }
+}

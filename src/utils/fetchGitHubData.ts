@@ -9,7 +9,6 @@ export const fetchGitHubData = async (): Promise<TGitHubData> => {
       },
     });
     const data = await res.json();
-    console.log(data);
     return data;
   } catch (err) {
     throw err;

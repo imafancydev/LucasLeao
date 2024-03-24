@@ -3,19 +3,23 @@
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
-const TypedName = () => {
+interface TypedNameProps {
+  name: string;
+  className: string;
+}
+
+const TypedName = ({ name, className }: TypedNameProps) => {
   const typedNameRef = useRef(null);
   useEffect(() => {
     const typed = new Typed(typedNameRef.current, {
-      strings: ["<span>Lucas Leão</span>"],
+      strings: [`<span>${name}</span>`],
       typeSpeed: 50,
     });
     return () => {
       typed.destroy();
     };
   }, []);
-
-  return <span ref={typedNameRef}></span>;
+  return <span ref={typedNameRef} className={className}></span>;
 };
 
 export default TypedName;
