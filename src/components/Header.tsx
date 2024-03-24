@@ -25,7 +25,7 @@ const Header = ({ gitHubData }: IGitHubInfoProps) => {
       </div>
 
       <nav>
-        <ul className="flex flex-row items-center gap-4 text-sm sm:text-xs">
+        <ul className="flex flex-row items-center gap-4 text-sm sm:text-base">
           <li
             data-cursor="block"
             data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.5s;border-radius: 6px"

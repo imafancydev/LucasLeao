@@ -11,6 +11,11 @@ export default async function Home() {
   return (
     <Container>
       <Header gitHubData={myPersonalGitHubData}></Header>
+      <main className="my-8">
+        <p>
+          Olá, meu nome é <span>Lucas Leão</span>
+        </p>
+      </main>
     </Container>
   );
 }
