@@ -1,5 +1,5 @@
-const MyBooks = () => {
-  return <div>oi</div>;
-};
+import MainSection from "@/components/MainSection";
+
+const MyBooks = () => {};
 
 export default MyBooks;
