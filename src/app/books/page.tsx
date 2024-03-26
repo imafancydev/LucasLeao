@@ -1,11 +1,5 @@
-import Container from "@/components/Container";
-
 const MyBooks = () => {
-  return (
-    <Container>
-      <div>oi</div>
-    </Container>
-  );
+  return <div>oi</div>;
 };
 
 export default MyBooks;
