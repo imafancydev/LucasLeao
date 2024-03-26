@@ -27,7 +27,7 @@ const Header = ({ gitHubData }: IGitHubInfoProps) => {
   return (
     <IPadCursorProvider config={config}>
       <header className="flex flex-col items-center justify-between sm:flex-row">
-        <div className="flex gap-4 items-center my-5">
+        <div className="my-5 flex items-center gap-4">
           <Link href={gitHubData.html_url} target="_blank">
             <Avatar
               data-cursor="block"
@@ -39,15 +39,15 @@ const Header = ({ gitHubData }: IGitHubInfoProps) => {
           </Link>
         </div>
 
-        <div className="flex flex-row items-center text-lg mt-1">
+        <div className="mt-1 flex flex-row items-center text-lg">
           <span data-curso="text">Hi, I'm</span>
           <div
             data-cursor="block"
             data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"
-            className="ml-2 px-2 text-nowrap inline-block"
+            className="ml-2 inline-block text-nowrap px-2"
           >
             <TypedName
-              className="text-lg font-bold lucasleao"
+              className="lucasleao text-lg font-bold"
               name="Lucas Leão"
             />
           </div>

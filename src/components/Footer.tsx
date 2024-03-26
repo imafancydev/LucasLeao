@@ -2,7 +2,7 @@ import Links from "./Links";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row sm:flex-col items-center justify-between my-8 md:my-14">
+    <footer className="my-8 flex flex-col items-center justify-between sm:flex-col md:my-14 md:flex-row">
       <div className="mt-9 sm:mb-3">
         <small className="text-sm font-normal leading-none">
           2022-present &copy;

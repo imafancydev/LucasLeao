@@ -3,7 +3,7 @@ import MainSection from "@/components/MainSection";
 export default function Home() {
   return (
     <MainSection className="text-lg">
-      <div className="italic flex flex-col items-center sm:flex-row font-bold">
+      <div className="flex flex-col items-center font-bold italic sm:flex-row">
         <code
           className="ml-1 px-1"
           data-cursor="block"
