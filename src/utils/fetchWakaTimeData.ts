@@ -1,10 +1,10 @@
 import { TWakaTimeData } from "@/types/WakaTimeData";
-
+import { env } from "process";
 export const fetchWakaTimeData = async (): Promise<TWakaTimeData> => {
-  const API_KEY = "waka_bc5b8d3c-466c-46ac-b6ec-18cec61c1709";
-
   // Encoding the API key in base64
-  const base64EncodedKey = Buffer.from(API_KEY).toString("base64");
+  const base64EncodedKey = Buffer.from(env.WAKATIME_API_SECRET_KEY).toString(
+    "base64",
+  );
 
   try {
     const response = await fetch(
