@@ -14,6 +14,9 @@ export const fetchWakaTimeData = async (): Promise<TWakaTimeData> => {
         headers: {
           Authorization: `Basic ${base64EncodedKey}`,
         },
+        next: {
+          revalidate: 151200,
+        },
       },
     );
 
