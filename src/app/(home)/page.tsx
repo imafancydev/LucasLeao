@@ -1,6 +1,12 @@
 import MainSection from "@/components/MainSection";
+import { fetchWakaTimeData } from "@/utils/fetchWakaTimeData";
 
-export default function Home() {
+const getWakaTimeInfoData = async () => {
+  return fetchWakaTimeData();
+};
+
+const Home = async () => {
+  const userWakaTimeData = await getWakaTimeInfoData();
   return (
     <MainSection className="text-lg">
       <div className="flex flex-col items-center font-bold italic sm:flex-row">
@@ -13,8 +19,10 @@ export default function Home() {
         >
           &#60;coding&nbsp;/&#62;
         </code>
-        <p>for fun in free hours</p>
+        <p>for fun in free hours {userWakaTimeData.data.text} </p>
       </div>
     </MainSection>
   );
-}
+};
+
+export default Home;
