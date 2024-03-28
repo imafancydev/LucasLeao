@@ -25,3 +25,28 @@
     width: 100%;
   }
 }
+
+@layer utilities {
+  .coding {
+    position: relative;
+  }
+  .coding::after {
+    padding: inherit;
+    content: "<coding />";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    transition: all 0.5s;
+    z-index: 1;
+    background: -webkit-linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .coding:hover::after {
+    width: 100%;
+  }
+}
