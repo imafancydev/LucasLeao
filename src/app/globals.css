@@ -17,7 +17,18 @@
     width: 0;
     transition: all 0.5s;
     z-index: 1;
-    background: -webkit-linear-gradient(0deg, #e81e57 0%, #910aff 80%, #af38ff);
+    background: #7f00ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #e100ff,
+      #7f00ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #e100ff,
+      #7f00ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -42,7 +53,17 @@
     width: 0;
     transition: all 0.5s;
     z-index: 1;
-    background: -webkit-linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    background: #7f00ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #7f00ff,
+      #e100ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #7f00ff,
+      #e100ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
