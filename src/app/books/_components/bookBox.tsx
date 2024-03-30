@@ -15,8 +15,6 @@ export const BookBox = ({ book }: BookProps) => {
       </div>
       <div className="h-max-[200px] flex h-full items-center justify-center rounded-md p-6">
         <Image
-          data-cursor="block"
-          data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1;--cursor-blur-duration: 1.4s;border-radius: 6px"
           src={book.icon[0]}
           width={200}
           height={200}
