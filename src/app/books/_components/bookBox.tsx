@@ -7,10 +7,7 @@ interface BookProps {
 
 export const BookBox = ({ book }: BookProps) => {
   return (
-    <div
-      data-cursor="block"
-      className="flex flex-col items-center justify-center gap-4 rounded-xl border p-2 shadow"
-    >
+    <div className="flex flex-col items-center justify-center gap-4 rounded-xl border p-2 shadow">
       <div className="flex flex-col space-y-1 p-6">
         <h3 className="line-clamp-1 text-center text-xl font-bold italic tracking-tight">
           {book.name}
