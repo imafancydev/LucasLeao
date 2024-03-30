@@ -6,9 +6,7 @@ interface MainSectionProps {
 }
 
 const MainSection = ({ className, children }: MainSectionProps) => {
-  return (
-    <main className={twMerge("my-8 text-2xl", className)}>{children}</main>
-  );
+  return <main className={twMerge("my-8", className)}>{children}</main>;
 };
 
 export default MainSection;
