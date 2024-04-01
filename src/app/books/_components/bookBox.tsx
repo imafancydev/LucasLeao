@@ -12,11 +12,14 @@ interface BookProps {
 
 export const BookBox = ({ book }: BookProps) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 rounded-xl border p-2 shadow">
+    <div className="flex flex-col items-center justify-center gap-4 rounded-xl border p-2 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
       <div className="flex flex-col space-y-1 p-6">
         <Popover>
-          <PopoverTrigger>
-            <h3 className="line-clamp-1 text-center text-xl font-bold italic tracking-tight">
+          <PopoverTrigger
+            data-cursor="block"
+            data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"
+          >
+            <h3 className="line-clamp-1 text-center text-xl font-bold tracking-tight">
               {book.name}
             </h3>
           </PopoverTrigger>
@@ -25,12 +28,12 @@ export const BookBox = ({ book }: BookProps) => {
           </PopoverContent>
         </Popover>
       </div>
-      <div className="h-max-[200px] flex h-full items-center justify-center rounded-md p-5">
+      <div className="h-max-[150px] flex h-full items-center justify-center rounded-md p-5">
         <Image
           src={book.icon[0]}
           width={200}
           height={200}
-          className="max-h-[150px] max-w-[180px] rounded-md bg-cover bg-center"
+          className="max-h-[100px] max-w-[130px] rounded-md bg-cover bg-center"
           style={{ objectFit: "contain" }}
           alt={book.name}
         />
