@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #171722;
+  border-radius: 999px;
+}
+
 @layer utilities {
   .lucasleao {
     position: relative;
