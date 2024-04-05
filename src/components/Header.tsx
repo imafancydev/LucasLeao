@@ -71,7 +71,7 @@ const Header = ({ gitHubData }: IGitHubInfoProps) => {
               data-cursor="block"
               data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.5s;border-radius: 6px"
             >
-              <Link href={"/"}>Projetos</Link>
+              <Link href={"/projects"}>Projetos</Link>
             </li>
             <li
               data-cursor="block"
