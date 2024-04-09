@@ -1,5 +1,5 @@
 import MainSection from "@/components/mainSection";
-import BookBox from "./_components/book-item";
+import BookItem from "./_components/book-item";
 import { portfolioBooks } from "@/constants/books";
 
 const MyBooks = () => {
@@ -13,7 +13,7 @@ const MyBooks = () => {
       </div>
       <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {portfolioBooks.map((book) => (
-          <BookBox key={book.id} book={book} />
+          <BookItem key={book.id} book={book} />
         ))}
       </div>
     </MainSection>

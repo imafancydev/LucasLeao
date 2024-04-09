@@ -10,7 +10,7 @@ interface BookProps {
   book: TBooksData;
 }
 
-export const BookBox = ({ book }: BookProps) => {
+export const BookItem = ({ book }: BookProps) => {
   return (
     <div className="flex flex-col items-center justify-center gap-4 rounded-xl p-2 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
       <div className="flex flex-col space-y-1 p-6">
@@ -42,4 +42,4 @@ export const BookBox = ({ book }: BookProps) => {
   );
 };
 
-export default BookBox;
+export default BookItem;
