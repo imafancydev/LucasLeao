@@ -1,8 +1,11 @@
+import { BiLogoGithub, BiLogoDiscord } from "react-icons/bi";
+
+import { fetchWakaTimeData } from "@/utils/fetchWakaTimeData";
+
+import Link from "next/link";
+
 import Links from "@/components/links";
 import MainSection from "@/components/mainSection";
-import { fetchWakaTimeData } from "@/utils/fetchWakaTimeData";
-import Link from "next/link";
-import { BiLogoGithub, BiLogoDiscord } from "react-icons/bi";
 
 const getWakaTimeInfoData = async () => {
   return fetchWakaTimeData();

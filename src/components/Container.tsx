@@ -1,7 +1,9 @@
 import React from "react";
-import Footer from "./Footer";
-import Header from "./Header";
+
 import { fetchGitHubData } from "@/utils/fetchGitHubData";
+
+import Footer from "./footer";
+import Header from "./header";
 
 type ContainerProps = {
   children: React.ReactNode;

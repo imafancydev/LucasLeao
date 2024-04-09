@@ -1,11 +1,14 @@
 "use client";
+import { IPadCursorProvider, useIPadCursor } from "ipad-cursor/react";
 
 import { TMyPersonalGitHubData } from "@/types/GitHubData";
+
 import { ModeToggle } from "./mode-toggle";
+
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
-import Link from "next/link";
 import TypedName from "./typed-name";
-import { IPadCursorProvider, useIPadCursor } from "ipad-cursor/react";
+import Link from "next/link";
+
 import type { IpadCursorConfig } from "ipad-cursor";
 interface IGitHubInfoProps {
   gitHubData: TMyPersonalGitHubData;

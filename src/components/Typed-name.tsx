@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
+
 import Typed from "typed.js";
 
 interface TypedNameProps {
