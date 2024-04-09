@@ -43,7 +43,7 @@ const Header = ({ gitHubData }: IGitHubInfoProps) => {
         </div>
 
         <div className="mt-1 flex flex-row items-center text-lg">
-          <span data-curso="text">Hi, I&lsquom</span>
+          <span data-curso="text">Hi, I m</span>
           <div
             data-cursor="block"
             data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"
