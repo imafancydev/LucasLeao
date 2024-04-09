@@ -1,5 +1,5 @@
-import Links from "@/components/Links";
-import MainSection from "@/components/MainSection";
+import Links from "@/components/links";
+import MainSection from "@/components/mainSection";
 import { fetchWakaTimeData } from "@/utils/fetchWakaTimeData";
 import Link from "next/link";
 import { BiLogoGithub, BiLogoDiscord } from "react-icons/bi";

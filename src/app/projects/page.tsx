@@ -1,9 +1,10 @@
-import MainSection from "@/components/MainSection";
+import MainSection from "@/components/mainSection";
 
 const SideProjects = () => {
   return (
     <MainSection className="text-2xl">
-      <div>oi</div>
+      <div className="flex flex-col gap-3">
+      </div>
     </MainSection>
   );
 };

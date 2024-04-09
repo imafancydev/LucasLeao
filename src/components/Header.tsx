@@ -1,10 +1,10 @@
 "use client";
 
 import { TMyPersonalGitHubData } from "@/types/GitHubData";
-import { ModeToggle } from "./Mode-toggle";
+import { ModeToggle } from "./mode-toggle";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 import Link from "next/link";
-import TypedName from "./Typed-name";
+import TypedName from "./typed-name";
 import { IPadCursorProvider, useIPadCursor } from "ipad-cursor/react";
 import type { IpadCursorConfig } from "ipad-cursor";
 interface IGitHubInfoProps {
@@ -40,7 +40,7 @@ const Header = ({ gitHubData }: IGitHubInfoProps) => {
         </div>
 
         <div className="mt-1 flex flex-row items-center text-lg">
-          <span data-curso="text">Hi, I'm</span>
+          <span data-curso="text">Hi, I&lsquom</span>
           <div
             data-cursor="block"
             data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"

@@ -1,4 +1,4 @@
-import Links from "./Links";
+import Links from "./links";
 
 export default function Footer() {
   return (

@@ -1,5 +1,5 @@
-import MainSection from "@/components/MainSection";
-import BookBox from "./_components/bookBox";
+import MainSection from "@/components/mainSection";
+import BookBox from "./_components/book-item";
 import { portfolioBooks } from "@/constants/books";
 
 const MyBooks = () => {

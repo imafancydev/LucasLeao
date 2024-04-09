@@ -18,7 +18,7 @@ const TypedName = ({ name, className }: TypedNameProps) => {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [name]);
   return <span ref={typedNameRef} className={className}></span>;
 };
 
