@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import Links from "@/components/links";
 import MainSection from "@/components/mainSection";
+import { CodingTag } from "@/components/coding-tag";
 
 const getWakaTimeInfoData = async () => {
   return fetchWakaTimeData();
@@ -16,26 +17,18 @@ const Home = async () => {
   return (
     <MainSection className="text-2xl">
       <div className="flex flex-col items-center justify-center font-bold italic sm:flex-row">
-        <code
-          className="ml-1 inline-block px-1 leading-relaxed"
-          data-cursor="block"
-          data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"
-        >
+        <CodingTag className="ml-1 inline-block px-1">
           &#60;coding&nbsp;/&#62;
-        </code>
+        </CodingTag>
         <p>for fun in free hours</p>
       </div>
       <div className="flex flex-col items-center justify-center font-bold italic sm:flex-row">
         <span data-cursor="text" className="mr-1">
           {userWakaTimeData.data.text} of
         </span>
-        <code
-          className="coding ml-1 leading-relaxed"
-          data-cursor="block"
-          data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"
-        >
+        <CodingTag className="coding ml-1 leading-relaxed">
           &#60;coding&nbsp;/&#62;
-        </code>
+        </CodingTag>
       </div>
       <div className="flex flex-col items-center justify-center font-bold italic sm:flex-row">
         <span data-cursor>front-end</span>
