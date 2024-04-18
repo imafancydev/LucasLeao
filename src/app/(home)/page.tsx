@@ -26,19 +26,13 @@ const Home = async () => {
         <span data-cursor="text" className="mr-1">
           {userWakaTimeData.data.text} of
         </span>
-        <CodingTag className="coding ml-1 leading-relaxed">
+        <CodingTag className=" ml-1 leading-relaxed">
           &#60;coding&nbsp;/&#62;
         </CodingTag>
       </div>
       <div className="flex flex-col items-center justify-center font-bold italic sm:flex-row">
         <span data-cursor>front-end</span>
-        <h3
-          className="ml-1 px-1 leading-none"
-          data-cursor="block"
-          data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"
-        >
-          &#60;developer&nbsp;/&#62;
-        </h3>
+        <h3 className="ml-1 px-1 leading-none">&#60;developer&nbsp;/&#62;</h3>
       </div>
       <div className="my-4 flex flex-col text-lg font-semibold italic sm:flex-row">
         <p>
@@ -58,7 +52,7 @@ const Home = async () => {
       </div>
 
       <div className="my-2 flex flex-row gap-3 text-xs font-bold italic md:flex-row">
-        <div data-cursor="block">
+        <div>
           <Link
             href="https://github.com/imafancydev"
             className="flex items-center gap-1 border-b px-[5px] py-[2px] text-gray-500 transition-all duration-500 hover:border-gray-500"
@@ -69,7 +63,7 @@ const Home = async () => {
           </Link>
         </div>
 
-        <div data-cursor="block">
+        <div>
           <p className="flex items-center gap-1 border-b px-[5px] py-[2px] text-gray-500 transition-all duration-500 hover:border-gray-500">
             <BiLogoDiscord size="20" />
             <span className="ml-1">lucasleao0000</span>

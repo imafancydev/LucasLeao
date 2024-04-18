@@ -49,38 +49,3 @@
     width: 100%;
   }
 }
-
-@layer utilities {
-  .coding {
-    position: relative;
-  }
-  .coding::after {
-    padding: inherit;
-    content: "<coding />";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    transition: all 0.5s;
-    z-index: 1;
-    background: #7f00ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #7f00ff,
-      #e100ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #7f00ff,
-      #e100ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .coding:hover::after {
-    width: 100%;
-  }
-}

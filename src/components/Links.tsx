@@ -9,8 +9,6 @@ const Links = ({ children, olink }: LinkProps) => {
       href={olink}
       className="border-b text-gray-500 transition-all duration-500 hover:border-gray-500"
       target="_blank"
-      data-cursor="block"
-      data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 1s;border-radius: 6px"
     >
       <span className="p-1">{children}</span>
     </a>
