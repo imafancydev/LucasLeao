@@ -26,7 +26,7 @@ const Home = async () => {
         <span data-cursor="text" className="mr-1">
           {userWakaTimeData.data.text} of
         </span>
-        <CodingTag className=" ml-1 leading-relaxed">
+        <CodingTag className="ml-1 leading-relaxed">
           &#60;coding&nbsp;/&#62;
         </CodingTag>
       </div>

@@ -2,7 +2,6 @@
 
 import { twMerge } from "tailwind-merge";
 
-
 interface MainSectionProps {
   className: string;
   children: React.ReactNode;
