@@ -15,10 +15,7 @@ export const BookItem = ({ book }: BookProps) => {
     <div className="flex flex-col items-center justify-center gap-4 rounded-xl p-2 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
       <div className="flex flex-col space-y-1 p-6">
         <Popover>
-          <PopoverTrigger
-            data-cursor="block"
-            data-cursor-style="--cursor-radius: 50%;--cursor-scale: 1.1;--cursor-blur-duration: 0.7s;border-radius: 6px"
-          >
+          <PopoverTrigger>
             <h3 className="line-clamp-1 text-center text-xl font-bold tracking-tight">
               {book.name}
             </h3>

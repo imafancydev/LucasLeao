@@ -8,7 +8,6 @@ export const ProjectsItem = ({ projects }: ProjectsItemProps) => {
   return (
     <a
       target="_blank"
-      data-cursor="block"
       href={projects.gitHubLink}
     >
       <div className="flex flex-row items-center justify-between">

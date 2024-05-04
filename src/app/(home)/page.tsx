@@ -23,15 +23,13 @@ const Home = async () => {
         <p>for fun in free hours</p>
       </div>
       <div className="flex flex-col items-center justify-center font-bold italic sm:flex-row">
-        <span data-cursor="text" className="mr-1">
-          {userWakaTimeData.data.text} of
-        </span>
+        <span className="mr-1">{userWakaTimeData.data.text} of</span>
         <CodingTag className="ml-1 leading-relaxed">
           &#60;coding&nbsp;/&#62;
         </CodingTag>
       </div>
       <div className="flex flex-col items-center justify-center font-bold italic sm:flex-row">
-        <span data-cursor>front-end</span>
+        <span>front-end</span>
         <h3 className="ml-1 px-1 leading-none">&#60;developer&nbsp;/&#62;</h3>
       </div>
       <div className="my-4 flex flex-col text-lg font-semibold italic sm:flex-row">
